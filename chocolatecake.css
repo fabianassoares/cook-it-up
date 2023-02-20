@@ -1,0 +1,290 @@
+body{
+  background-color: lightgray;
+  margin: auto;
+
+}
+
+/* Barra fixa */
+
+.barra-fixa{
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+}
+
+.barra-fixa-left{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 50%;
+  height: 120px;
+  align-items: center;
+  margin-top: 0;
+  gap: 20px;
+ 
+}
+
+.barra-fixa-right{
+  display: flex;
+  width: 50%;
+  height: 120px;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 0;
+  gap: 80px;
+}
+
+a, .nome-pagina{
+  text-decoration: none;
+  font-family: "Playfair Display";
+  font-weight: bold;
+  color: black;
+}
+
+.barra-fixa-left-img{
+  width: 60px;
+  height: 60px;
+  padding-left: 20px;
+  padding-right: 1px;
+
+}
+
+.barra-fixa-right-img{
+  width: 21px;
+  height: 21px;
+  padding-right: 30px;
+}
+
+/* Barra fixa com frase */
+
+.barra-home{
+  display: flex;
+  width: 100%;
+  height: 80px;
+  background-color: #B22222;
+  align-items: center;
+  justify-content: center;
+  border-top: 0.5px solid #000;
+  color: white;
+}
+
+.subtitulo{
+  text-align: center;
+  font-family: "Anonymous Pro";
+}
+
+/*Container de receita */ 
+
+.container{
+  width: auto;
+  height: auto;
+  background-color: lightgray;
+  display: flex;
+  margin: auto;
+  }
+
+.choc-cake-recipe{
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  word-wrap: normal;
+  margin: auto;
+  font-family: "Roboto";
+}
+
+
+.titulo-recipe-chocolate-cake{
+  font-family: "Grand Hotel";
+  text-align: center;
+  font-size: 60px;
+  font-weight: lighter;
+}
+
+.recipe-ingredients-chocolate-cake{
+  font-family: "Anonymous Pro";
+  background-color: lightgray;
+  text-align: center;
+  padding: 15px;
+}
+
+.instructions-chocolate-cake{
+  font-family: "Anonymous Pro";
+  background-color: lightgray;
+  text-align: center;
+  padding: 15px;
+}
+
+.notes{
+  font-family: "Anonymous Pro";
+  background-color: lightgray;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Container de informações nutricionais */ 
+
+.nutrition{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 30px;
+  border-top: 0.5px solid black;
+}
+
+.nutrition-item{
+  background-color: lightgray;
+  opacity: 60%;
+  width: auto;
+  border-radius: 5px;
+  padding: 12px;
+  font-weight: bold;
+  font-family: "Anonymous Pro";
+  
+}
+
+.imagem-card{
+  display: flex;
+  width: 100%;
+  margin: auto;
+  gap: 15px;
+  height: auto;
+}
+
+.chocolate-cake-img{
+  width: 50%;
+  justify-content: center;
+  border-radius: 10px;
+
+}
+
+/* Formnulário */ 
+
+form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #B22222;
+  margin: auto;
+  margin-top: 50px;
+  padding: 50px;
+  text-align: center;
+  gap: 5px;
+  font-family: "Anonymous Pro";
+  color: white;
+  align-items: center;
+  position: sticky;
+}
+
+#user-name{
+  padding: 15px;
+  width: 60%;
+  opacity: 90%;
+  font-family: "Helvetica";
+}
+
+#user-email{
+  padding: 15px;
+  width: 60%;
+  opacity: 90%;
+  font-family: "Helvetica";
+}
+
+#submit{
+  padding: 15px;
+  align-items: center;
+  width: 10%;
+  font-family: "Helvetica";
+  font-weight: 450px;
+  background-color: lightgray;
+  border-radius: 5px;
+  border: none;
+}
+
+#submit:hover{
+  background-color: white;
+  color: #B22222;
+  cursor: pointer;
+  font-weight: bold;
+  
+}
+
+textarea{
+  width: 60%;
+  height: 180px;
+  opacity: 90%;
+  padding: 15px;
+  font-family: "Helvetica";
+}
+
+/* Footer */ 
+
+.footer{
+  width: 100%;
+  height: 120px;
+  background-color: white;
+}
+
+.social-media-icons{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 30px;
+}
+
+.social-media-item{
+  width: 35px;
+  height: 35px;
+}
+
+/* Resposividade */
+
+
+@media(max-width: 900px){
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
+}
+
+@media(max-width: 900px){
+  .choc-cake-recipe{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+  }
+}
+
+@media (max-width: 900px){
+  .barra-fixa-right{
+    display: none;
+  }
+}
+
+@media (max-width: 900px){
+  .form{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+  }
+}
+
+@media (max-width: 900px){
+  #submit{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+  }
+}
+

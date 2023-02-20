@@ -1,0 +1,160 @@
+<HTML>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+  <title>Cook it Up!</title>
+
+</head>
+
+<body>
+  <!-- Código da barra de navegação (manu e logo)-->
+
+  <div class="barra-fixa">
+
+    <div class="barra-fixa-left">
+      <a href="home.html" class="barra-fixa-left">
+        <img src="/icons-menu/boiling.png" class="barra-fixa-left-img">
+        <h1 class="nome-pagina">Cook It Up!</h1>
+      </a>
+    </div>
+
+    <div class="barra-fixa-right">
+      <a href="/home.html">HOME</a>
+      <a href="/recipes.html"> RECIPES </a>
+      <a href="/about.html"> ABOUT</a>
+      <a href="pesquisar.html"><img src="icons-menu/lupa.png" class="barra-fixa-right-img"></a>
+
+    </div>
+  </div>
+
+  <!-- Código para segunda barra -->
+
+  <div class="barra-home">
+    <h2 class="subtitulo">RECIPES FOR THE EVERYDAY LIFE! </h2>
+  </div>
+
+  <!-- Código cards dos albuns na home-->
+
+  <div class="container-recipes">
+    <div class="card">
+      <a href="link-recipe-salad.html">
+        <img class="card-img" src="recipes-images/salad.jpg">
+        <p class="card-tittle">salad</p>
+    </div>
+
+    <div class="card">
+      <a href="link-recipe-chocolate.html">
+        <img class="card-img" src="recipes-images/chocolate2.jpg">
+        <p class="card-tittle">chocolate</p>
+    </div>
+
+    <div class="card">
+      <a href="link-recipe-soup.html">
+        <img class="card-img" src="recipes-images/soup.jpg">
+        <p class="card-tittle">soup</p>
+    </div>
+
+    <div class="card">
+      <a href="link-recipe-pasta.html">
+        <img class="card-img" src="recipes-images/pasta1.jpg">
+        <p class="card-tittle">pasta</p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="link-recipe-breakfast.html">
+        <img class="card-img" src="recipes-images/breakfast.jpg">
+        <p class="card-tittle">breakfast</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- Código dos artigos na home -->
+  <div class="container-inferior">
+    <div class="container-artigos">
+      <div class="artigos">
+        <a href="https://www.newfoodmagazine.com/article/189435/food-innovation-trends-in-2023-whats-on-the-horizon/">
+          <h1 class="tittle-articles">Food innovation trends in 2023 – what’s on the horizon?</h1>
+          <span class="details-articles">6 February 2023</span>
+          <span class="details-articles">By Dr. Andy Zynga</span>
+        </a>
+      </div>
+
+      <div class="artigos">
+        <a
+          href="https://www.newfoodmagazine.com/article/189376/growing-evidence-to-ban-the-use-of-nitrites-from-our-meat/">
+          <h1 class="tittle-articles">Growing evidence to ban the use of nitrites from our meat</h1>
+          <span class="details-articles">1 February 2023</span>
+          <span class="details-articles">By Professor Chris Elliott</span>
+        </a>
+      </div>
+
+      <div class="artigos">
+        <a href="https://www.newfoodmagazine.com/article/189209/veganuary-a-trend-here-to-stay/">
+          <h1 class="tittle-articles">Veganuary: A trend here to stay? </h1>
+          <span class="details-articles">27 January 2023</span>
+          <span class="details-articles">By Grace Galler</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Cógido para segundo containee de receitas [lateral direita]-->
+    <div class="seg-container">
+      <div class="card-right">
+        <a href="chocolatecake.html" class="card-recipe-right">
+          <img src="recipes-images-seg/chocolate cake.webp" class="img-card-seg">
+          <h3 class="recipe-tittle-seg">Delicious Chocolate Cake</h3>
+        </a>
+      </div>
+      <div class="card-right">
+        <a href="pancakes.html" class="card-recipe-right">
+          <img src="recipes-images-seg/pancakes.jpeg" class="img-card-seg">
+          <h3 class="recipe-tittle-seg">Easy and delicious Pancakes</h3>
+        </a>
+      </div>
+      <div class="card-right">
+        <a href="grilled-salmon.html" class="card-recipe-right">
+          <img src="recipes-images-seg/grilled-salmon.jpeg" class="img-card-seg">
+          <h3 class="recipe-tittle-seg">Healthy and easy-to-make Grilled Salmon</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Código para formulário -->
+  <form action="https://getform.io/f/efc6264c-7b3f-40f6-90d4-b8c6f6826a2b" method="post">
+    <h1 class="titulo-form">Contact us</h1>
+    <input type="text" id="user-name" name="name" required placeholder="Full Name" minlength="4" maxlength="30">
+    <input type="email" id="user-email" name="email" required placeholder="Email" min="4" maxlength="30">
+    <textarea placeholder="Type your message here..." required minlength="16" maxlength="256"
+      rows="6"></textarea></textarea>
+    <input type="submit" id="submit" required value="Send">
+  </form>
+
+  <!-- Rodapé -->
+
+  <div class="footer">
+    <div class="social-media-icons">
+      <a href="https://twitter.com/">
+        <img src="icons-footer/twitter.png" class="social-media-item"></a>
+      <a href="https://www.whatsapp.com/">
+        <img src="icons-footer/whatsapp.png" class="social-media-item"></a>
+      <a href="https://facebook.com">
+        <img src="icons-footer/facebook.png" class="social-media-item"></a>
+      <a href="https://instagram.com">
+        <img src="icons-footer/instagram.png" class="social-media-item"></a>
+      <a href="https://pinterest.com">
+        <img src="icons-footer/pinterest.png" class="social-media-item"></a>
+    </div>
+  </div>
+
+
+</body>
+
+</HTML>
