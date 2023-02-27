@@ -343,3 +343,15 @@ textarea{
   }
 }
 
+@media (max-width: 900px){
+  .nome-pagina{
+  display: flex;
+  flex-wrap: nowrapp;
+  }
+}
+
+@media (max-width: 900px){
+  .barra-fixa-left{
+    width: auto;
+  }
+}

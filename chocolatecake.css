@@ -288,3 +288,9 @@ textarea{
   }
 }
 
+@media (max-width: 900px){
+  .barra-fixa-left{
+    width: auto;
+  }
+}
+
