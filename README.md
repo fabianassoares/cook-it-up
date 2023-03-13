@@ -1,3 +1,3 @@
-# cook-it-up
-My first project using HTML and CSS
-Recipe's Blog.
+# Cook it Up!
+# My first project using HTML and CSS.
+# Recipe's Blog.
