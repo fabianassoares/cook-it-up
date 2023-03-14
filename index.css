@@ -288,6 +288,12 @@ textarea{
   font-family: "Helvetica";
 }
 
+.span-required{
+  display: none;
+  font-size: 12px;
+  font-weight: bold;  
+}
+
 /* Footer */ 
 
 .footer{
