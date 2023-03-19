@@ -55,3 +55,36 @@ function emailValidate (){
      }
     }
 
+/* JS para cards de ler mais */
+
+let more = document.querySelectorAll('#read-button');
+for (let i = 0; i < more.length; i++) {
+    more[i].addEventListener('click', function () {
+        more[i].parentNode.classList.toggle('active')
+    })
+}
+
+/* JS para efeito de digitação */
+
+var paragrafo = document.querySelector('.par-dig');
+var texto = paragrafo.innerHTML
+var index = 0
+
+const escrever = () =>{
+    paragrafo.innerHTML = paragrafo.innerHTML.replace('|', "")
+    
+    if (texto.length > index){
+        if (index == 0){
+            paragrafo.innerHTML = texto.charAt(index)
+        } else {
+            paragrafo.innerHTML += texto.charAt(index)
+        }
+        paragrafo.innerHTML += '|'
+
+        index++
+        setTimeout(escrever, 50)
+    }
+}
+
+escrever()
+

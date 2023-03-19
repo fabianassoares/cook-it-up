@@ -121,13 +121,14 @@
 
   <!-- Formulário -->
 
-  <form action="https://getform.io/f/efc6264c-7b3f-40f6-90d4-b8c6f6826a2b" method="post">
+  <form id="formulario">
     <h1 class="titulo-form">Contact us</h1>
-    <input type="text" id="user-name" name="name" required placeholder="Full Name" minlength="4" maxlength="30">
-    <input type="email" id="user-email" name="email" required placeholder="Email" min="4" maxlength="30">
-    <textarea placeholder="Type your message here..." required minlength="16" maxlength="256"
-      rows="6"></textarea></textarea>
-    <input type="submit" id="submit" required value="Send">
+    <input type="text" id="user-name" placeholder="Type your name here" oninput="nameValidate()">
+    <span class="span-required">Name must be at least 3 characters</span>
+    <input type="text" id="user-email" placeholder="Email" oninput="emailValidate()">
+    <span class="span-required">Type a valid email address</span>
+    <textarea input placeholder="Type your message here..." id= "msg-user" rows="6" maxlength="256" minlength="16" required></textarea></textarea>
+    <button type="submit" id="submit">Send</button>
   </form>
 
   <!-- Rodapé -->
@@ -147,6 +148,8 @@
     </div>
   </div>
 
+
+<script src="script.js" defer></script>
 </body>
 
 </HTML>

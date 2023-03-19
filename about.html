@@ -1,0 +1,124 @@
+<HTML>
+
+    <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="about.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+      
+      <title>Cook it Up!</title>
+    
+    </head>
+    
+    <body>
+      <!-- Código da barra de navegação (manu e logo)-->
+    
+      <div class="barra-fixa">
+    
+        <div class="barra-fixa-left">
+          <a href="index.html" class="barra-fixa-left">
+            <img src="/icons-menu/boiling.png" class="barra-fixa-left-img">
+            <h1 class="nome-pagina">Cook It Up!</h1>
+          </a>
+        </div>
+    
+        <div class="barra-fixa-right">
+          <a href="/index.html">HOME</a>
+          <a href="/recipes.html"> RECIPES </a>
+          <a href="/about.html"> ABOUT</a>
+          <a href="pesquisar.html"><img src="icons-menu/lupa.png" class="barra-fixa-right-img"></a>
+    
+        </div>
+      </div>
+    
+      <!-- Código para segunda barra -->
+    
+      <div class="barra-home">
+      </div>
+
+      <!-- Código para barra com efeito de digitação-->
+      <div class="digit-barra">
+        <p class="par-dig">Get to know more about our company</p>
+      </div>
+
+      <!--Cards da página about-->
+
+      <div class="card-about">
+        <div class="cards">
+            <div class="icon-about">
+            <img src="img-about/undraw_coding_re_iv62.svg" alt="Coding">
+            </div>
+          <div class="content-about">
+            <h3>What we do</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vestibulum risus quis tincidunt gravida. Sed ornare mauris est, ut pharetra nisl rutrum id. Suspendisse porta risus nulla, a ornare tortor venenatis at. Cras eget justo id turpis sodales pulvinar in ac augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis augue urna, lobortis sed luctus non, dictum at metus. Maecenas augue dolor, semper non sodales sit amet, dignissim eget lacus. Duis rhoncus nisl a orci scelerisque facilisis. Proin quis ligula quis risus convallis placerat. Fusce vulputate id mi id egestas. Aenean semper quam vitae scelerisque sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel feugiat diam. Vivamus in faucibus leo, consectetur mattis ante. Phasellus consectetur nibh et risus semper accumsan.
+            </p>
+          </div>
+          <button id="read-button">Read More</button>
+            </div>
+
+        <div class="cards">
+            <div class="icon-about">
+            <img src="img-about/undraw_female_avatar_efig.svg" alt="Female Avatar">
+            </div>
+          <div class="content-about">
+            <h3>Who is the creator</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vestibulum risus quis tincidunt gravida. Sed ornare mauris est, ut pharetra nisl rutrum id. Suspendisse porta risus nulla, a ornare tortor venenatis at. Cras eget justo id turpis sodales pulvinar in ac augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis augue urna, lobortis sed luctus non, dictum at metus. Maecenas augue dolor, semper non sodales sit amet, dignissim eget lacus. Duis rhoncus nisl a orci scelerisque facilisis. Proin quis ligula quis risus convallis placerat. Fusce vulputate id mi id egestas. Aenean semper quam vitae scelerisque sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel feugiat diam. Vivamus in faucibus leo, consectetur mattis ante. Phasellus consectetur nibh et risus semper accumsan.
+            </p>
+          </div>
+          <button id="read-button">Read More</button>
+            </div>
+
+        <div class="cards">
+            <div class="icon-about">
+                <img src="img-about/undraw_cooking_p7m1.svg" alt="Cooking">
+            </div>
+          <div class="content-about">
+            <h3>Our mission</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vestibulum risus quis tincidunt gravida. Sed ornare mauris est, ut pharetra nisl rutrum id. Suspendisse porta risus nulla, a ornare tortor venenatis at. Cras eget justo id turpis sodales pulvinar in ac augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis augue urna, lobortis sed luctus non, dictum at metus. Maecenas augue dolor, semper non sodales sit amet, dignissim eget lacus. Duis rhoncus nisl a orci scelerisque facilisis. Proin quis ligula quis risus convallis placerat. Fusce vulputate id mi id egestas. Aenean semper quam vitae scelerisque sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel feugiat diam. Vivamus in faucibus leo, consectetur mattis ante. Phasellus consectetur nibh et risus semper accumsan.
+            </p>
+          </div>
+          <button id="read-button">Read More</button>
+            </div>
+      </div>
+
+    
+      <!-- Código para formulário -->
+      <form id="formulario">
+        <h1 class="titulo-form">Contact us</h1>
+        <input type="text" id="user-name" placeholder="Type your name here" oninput="nameValidate()">
+        <span class="span-required">Name must be at least 3 characters</span>
+        <input type="text" id="user-email" placeholder="Email" oninput="emailValidate()">
+        <span class="span-required">Type a valid email address</span>
+        <textarea input placeholder="Type your message here..." id= "msg-user" rows="6" maxlength="256" minlength="16" required></textarea></textarea>
+        <button type="submit" id="submit">Send</button>
+      </form>
+    
+    
+      <!-- Rodapé -->
+    
+      <div class="footer">
+        <div class="social-media-icons">
+          <a href="https://twitter.com/">
+            <img src="icons-footer/twitter.png" class="social-media-item"></a>
+          <a href="https://www.whatsapp.com/">
+            <img src="icons-footer/whatsapp.png" class="social-media-item"></a>
+          <a href="https://facebook.com">
+            <img src="icons-footer/facebook.png" class="social-media-item"></a>
+          <a href="https://instagram.com">
+            <img src="icons-footer/instagram.png" class="social-media-item"></a>
+          <a href="https://pinterest.com">
+            <img src="icons-footer/pinterest.png" class="social-media-item"></a>
+        </div>
+      </div>
+    
+    <script src="script.js" defer></script>
+    
+    </body>
+    </HTML>
+    

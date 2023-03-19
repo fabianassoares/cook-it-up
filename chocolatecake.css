@@ -152,10 +152,10 @@ a, .nome-pagina{
 
 .imagem-card{
   display: flex;
-  width: 100%;
+  width: 70%;
   margin: auto;
   gap: 15px;
-  height: auto;
+  height: 600px;
 }
 
 .chocolate-cake-img{
@@ -222,6 +222,12 @@ textarea{
   opacity: 90%;
   padding: 15px;
   font-family: "Helvetica";
+}
+
+.span-required{
+  display: none;
+  font-size: 12px;
+  font-weight: bold;  
 }
 
 /* Footer */ 
